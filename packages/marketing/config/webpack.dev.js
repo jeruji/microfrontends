@@ -25,6 +25,6 @@ const devConfig = {
             template: './public/index.html'
         })
     ]
-}
+};
 
 module.exports = merge(commonConfig, devConfig);
