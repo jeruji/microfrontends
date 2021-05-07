@@ -19,4 +19,4 @@ export default({ history }) => {
             </StylesProvider>
         </div>
     )
-}
+};
