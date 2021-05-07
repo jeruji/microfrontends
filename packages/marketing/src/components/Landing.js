@@ -132,9 +132,11 @@ export default function Album() {
                     </Typography>
                   </CardContent>
                   <CardActions>
+                    <Link to="/details">
                     <Button size="small" color="primary">
                       View
                     </Button>
+                    </Link>
                     <Button size="small" color="primary">
                       Edit
                     </Button>

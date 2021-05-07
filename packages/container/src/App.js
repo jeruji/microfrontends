@@ -9,6 +9,7 @@ import Header from './components/Header';
 const MarketingLazy = lazy(() => import('./components/MarketingApp'));
 const AuthLazy = lazy(() => import('./components/AuthApp'));
 const DashboardLazy = lazy(() => import('./components/DashboardApp'));
+const DetailsLazy = lazy(() => import('./components/DetailsApp'));
 
 const generateClassName = createGenerateClassName({
     productionPrefix: 'co',
@@ -40,6 +41,7 @@ export default () => {
                                     {!isSignedIn && <Redirect to="/" />}
                                     <DashboardLazy />
                                 </Route>
+                                <Route path="/details" component={DetailsLazy} />
                                 <Route path="/" component={MarketingLazy} />
                             </Switch>
                         </Suspense>
